@@ -17,23 +17,26 @@ class App extends React.Component{
 
 
   render(){
-return (
+return ( 
+<div>
   <div className="App">
-  <button onClick={this.handleClick}> Click Me </button>
-    <>
-if ({this.state.shows}) {
- <> return(
-   <div>
-    
-    <h1>{this.state.Person.fullName}</h1>
+  <button onClick={this.handleClick}> Click Me </button> </div>)/</div>
+
+if ({this.state.shows}===true) {
+ 
+    return( 
+    <div>
+      <h1>{this.state.Person.fullName}</h1>
     <h1>{this.state.Person.bio}</h1>
-    <h1>{this.state.Person.p}</h1>
-    </div>)</>
-}
+    <h1>{this.state.Person.profession}</h1>
+    </div>)
+   else {
+      return(
+        <div>nothing to show</div>)}
     
-</>
-</div>
-)
+      
+    }
+}
 
 }
 }
